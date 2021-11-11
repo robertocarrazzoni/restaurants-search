@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Portal from './Portal'
+import PortalModal from './Portal'
 import { Overlay, Dialog } from './styles'
 
 
@@ -25,11 +25,11 @@ const Modal = ({children, open, onClose}) => {
     }
 
     return (
-        <Portal>
+        <PortalModal>
             <Overlay onClick={onOverlayClick}>
                 <Dialog onClick={onDialogClick}>{children}</Dialog>
             </Overlay>
-        </Portal>
+        </PortalModal>
     )
 };
 

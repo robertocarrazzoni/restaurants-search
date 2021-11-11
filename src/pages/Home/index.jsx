@@ -63,7 +63,7 @@ function Home() {
  
             
                 </Search>
-                {restaurants.map((restaurant) => <RestaurantCard onClick={() => handleOpenModal(restaurant.placeId)} restaurant={restaurant} />)}
+                {restaurants.map((restaurant) => <RestaurantCard onClick={() => handleOpenModal(restaurant.place_id)} restaurant={restaurant} />)}
             </Container>
             <Map query={query} placeId={placeId}/>
            <Modal open={modalOpened} onClose={() => setModalOpened(!modalOpened)}>
